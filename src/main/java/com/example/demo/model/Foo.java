@@ -3,6 +3,7 @@ package com.example.demo.model;
 import java.time.Instant;
 import java.util.List;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
@@ -25,6 +26,7 @@ public class Foo {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
+	@Column(name="\"value\"")
 	private String value;
 
 	@Enumerated
